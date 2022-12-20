@@ -1,0 +1,3 @@
+{% extends "base.html" %} {% block content %} {% for table in tables %}
+{{titles[loop.index]}} {{ table|safe }} {% endfor %} {% for ticker in tickers %}
+{{ticker_titles[loop.index]}} {{ ticker|safe }} {% endfor %}{% endblock %}
